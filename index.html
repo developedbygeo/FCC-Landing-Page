@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./icon/favicon-16x16.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Joji's</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav-bar">
+        <a href="#landing"
+          ><img id="header-img" src="./img/logo.png" alt="logo-jojis"
+        /></a>
+        <ul>
+          <li class="nav-link"><a href="#products">Products</a></li>
+          <li class="nav-link"><a href="#">Locations</a></li>
+          <li class="nav-link"><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="landing" class="landing">
+        <header class="landing-header">
+          <h2>Meet <span class="l-span1">Joji's</span> Café</h2>
+          <h3>Where passion meets <span class="l-span2">art</span>.</h3>
+        </header>
+      </section>
+      <section id="products">
+        <header class="products-header">
+          <h2>Morning, noon or evening?</h2>
+          <h3>We've got you covered!</h3>
+        </header>
+        <div class="product-cards">
+          <div class="card">
+            <div class="img-container">
+              <img src="./img/coffee.jpg" alt="image of coffee beans" />
+            </div>
+            <h4>Coffee</h4>
+            <p>A plethora of choices.</p>
+          </div>
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="./img/brunch.png"
+                alt="image of brunch with food and fruits"
+              />
+            </div>
+            <h4>Brunch</h4>
+            <p>Delicious bites to choose from.</p>
+          </div>
+
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="./img/cocktails.png"
+                alt="image of frozen cocktails on the terrace"
+              />
+            </div>
+            <h4>Drinks</h4>
+            <p>A curated list of signature cocktails.</p>
+          </div>
+        </div>
+      </section>
+      <section id="locations">
+        <header class="locations-header">
+          <h2>Location is everything</h2>
+          <h3>And we are most likely within walking distance!</h3>
+        </header>
+        <div class="location-history">
+          <h3>Our journey began in 1999..</h3>
+          <p>
+            with our first coffee shop opening on High St. Since then, we have
+            10 shops ready to serve you and many more to come soon. <br />
+            We will be keeping you posted here, yet if you have any requests or
+            ideas, please feel free to reach out to us through the contact form.
+            <br />
+            In the meantime, here is a short video of our passion for coffee and
+            art, blended together!
+          </p>
+          <div class="wrapper">
+            <div class="big-card">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/vFcS080VYQ0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="big-card">
+              <img
+                src="./img/interior.jpg"
+                alt="photograph of the cafe interior"
+              />
+              <!-- TODO: Rearrange the divs in location, 1 div should be the text and the 2nd should be the video -->
+              <!-- TODO: Figure out why iframes are overflowing, fix that, add media queries -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
