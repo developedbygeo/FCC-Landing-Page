@@ -239,7 +239,7 @@ a {
   margin: 1rem 3rem;
 }
 
-.form button {
+#submit {
   width: 100%;
   padding: 2rem;
   margin-top: 5rem;
@@ -290,6 +290,78 @@ hr {
   text-align: center;
 }
 footer {
-  background: var(--lightblue);
-  color: white;
+  background: white;
+  text-align: center;
+}
+.footer-wrapper h5 {
+  flex: 1 1 30rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  font-size: 2rem;
+  color: var(--darkblue);
+}
+.footer-wrapper {
+  display: flex;
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  align-items: cen;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+.facebook,
+.twitter,
+.instagram {
+  flex: 1 1 10rem;
+  max-width: 10%;
+  padding-bottom: 2rem;
+}
+.footer-wrapper img {
+  max-width: 20%;
+  overflow: hidden;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #landing img {
+    max-width: 50%;
+  }
+  h2 {
+    font-size: 3.8rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  #video {
+    max-width: 100%;
+  }
+  .form {
+    width: 100%;
+  }
+
+  #msg {
+    width: 100%;
+  }
+  footer ul {
+    padding-top: 1rem;
+  }
+  .footer-wrapper img {
+    max-width: 60%;
+  }
 }
