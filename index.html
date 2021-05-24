@@ -32,8 +32,8 @@
         /></a>
         <ul>
           <li class="nav-link"><a href="#products">Products</a></li>
-          <li class="nav-link"><a href="#">Locations</a></li>
-          <li class="nav-link"><a href="#">Contact Us</a></li>
+          <li class="nav-link"><a href="#locations">Locations</a></li>
+          <li class="nav-link"><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
     </header>
@@ -86,39 +86,99 @@
           <h3>And we are most likely within walking distance!</h3>
         </header>
         <div class="location-history">
-          <h3>Our journey began in 1999..</h3>
-          <p>
-            with our first coffee shop opening on High St. Since then, we have
-            10 shops ready to serve you and many more to come soon. <br />
-            We will be keeping you posted here, yet if you have any requests or
-            ideas, please feel free to reach out to us through the contact form.
-            <br />
-            In the meantime, here is a short video of our passion for coffee and
-            art, blended together!
-          </p>
-          <div class="wrapper">
-            <div class="big-card">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/vFcS080VYQ0"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="big-card">
-              <img
-                src="./img/interior.jpg"
-                alt="photograph of the cafe interior"
-              />
-              <!-- TODO: Rearrange the divs in location, 1 div should be the text and the 2nd should be the video -->
-              <!-- TODO: Figure out why iframes are overflowing, fix that, add media queries -->
-            </div>
+          <div class="location-text">
+            <h3>Our journey began in 1999..</h3>
+            <p>
+              with our first coffee shop opening on High St. Since then, we have
+              10 shops ready to serve you and many more to come soon. <br />
+              We will be keeping you posted here, yet if you have any requests
+              or ideas, please feel free to reach out to us through the contact
+              form.
+              <br />
+              In the meantime, here is a short video of our passion for coffee
+              and art, blended together!
+            </p>
+          </div>
+          <div class="big-card">
+            <iframe
+              id="video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/vFcS080VYQ0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </section>
+      <section id="contact">
+        <div class="form">
+          <header class="form-header">
+            <h2>Contact us</h2>
+            <hr />
+          </header>
+          <form action=" https://www.freecodecamp.com/email-submit" id="form">
+            <div class="name">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Full name" required />
+            </div>
+            <div class="email">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email address"
+                required
+              />
+            </div>
+            <div class="text">
+              <textarea
+                name="text"
+                id="msg"
+                cols="30"
+                rows="10"
+                placeholder="Your thoughts or comments"
+              ></textarea>
+            </div>
+            <button value="send" type="submit" id="submit">Submit</button>
+          </form>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="footer-wrapper">
+        <h5>Joji's Cafe &copy;</h5>
+        <ul>
+          <div class="facebook">
+            <li>
+              <a href="#" title="Facebook"
+                ><img
+                  src="./icon/facebook.svg"
+                  alt="facebook-logo-social-media"
+              /></a>
+            </li>
+          </div>
+          <div class="twitter">
+            <li>
+              <a href="#" title="Twitter"
+                ><img src="./icon/twitter.svg" alt="twitter-logo-social-media"
+              /></a>
+            </li>
+          </div>
+          <div class="instagram">
+            <li>
+              <a href="#" title="Instagram"
+                ><img
+                  src="./icon/instagram.svg"
+                  alt="instagram-logo-social-media"
+              /></a>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
